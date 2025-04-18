@@ -9,6 +9,8 @@ fasteignamat_mkr = st.number_input("2) Fasteignamat þinnar eignar (m.kr.)", min
 eftirstodvar_mkr = st.number_input("3) Eftirstöðvar lána (m.kr.)", min_value=0.0)
 ltv_prcnt = st.slider("4) Veðhlutfall bankans (LTV %)", min_value=0, max_value=100, value=70)
 
+
+
 if st.button("Reikna"):
     asettverd = asettverd_mkr * 1_000_000
     fasteignamat = fasteignamat_mkr * 1_000_000
